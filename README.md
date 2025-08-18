@@ -5,6 +5,7 @@
 - Implementing the RUST blockchain based Health care management for the variant annotation and search.
 - Annotate and claim your sequenced variants using the Blockchain Healthcare.
 - Annotate with in a flick of a second 23&me personal genomics and generate SOL tokens for personal genomics.
+- This annotates your ancestral and personal variants in a flash of a second and generates blockchain Solana token so that you can sell your ancestry.
 
 ```
 SolGenome.
