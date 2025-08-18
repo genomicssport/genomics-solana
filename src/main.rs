@@ -1,7 +1,9 @@
+mod annotate;
 mod args;
 mod generatannot;
 mod map;
 mod readstruct;
+use crate::annotate::annotateall;
 use crate::args::CommandParse;
 use crate::args::Commands;
 use crate::generatannot::getrsid;
@@ -26,6 +28,10 @@ fn main() {
         }
         Commands::GenerateInfo { rsid } => {
             let command = task::block_on(getrsid(rsid)).unwrap();
+            println!("The command has finished:{}", command);
+        }
+        Commands::AnnotateAll { annotate, pathfile } => {
+            let command = task::block_on(annotateall(annotate, pathfile)).unwrap();
             println!("The command has finished:{}", command);
         }
     }

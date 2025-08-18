@@ -21,7 +21,9 @@ Usage: genomics-solana <COMMAND>
 
 Commands:
   generate-sol
-  help          Print this message or the help of the given subcommand(s)
+  generate-info
+  annotate-all
+  help           Print this message or the help of the given subcommand(s)
 
 Options:
   -h, --help     Print help

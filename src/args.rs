@@ -30,4 +30,10 @@ pub enum Commands {
         // provide the rsid for the variant
         rsid: String,
     },
+    AnnotateAll {
+        // provide yes as a comment and it will annotate all variants
+        annotate: String,
+        // provide the path to the file
+        pathfile: String,
+    },
 }

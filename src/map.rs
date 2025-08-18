@@ -35,7 +35,7 @@ pub async fn mapid(pathstring: &str, mapsnpid: String) -> Result<String, Box<dyn
         }
     }
 
-    let identifiedsnp = String::from(mapsnpid);
+    let identifiedsnp = mapsnpid;
     let formatstring = format!("{}/{}", "https://www.ncbi.nlm.nih.gov/snp/", identifiedsnp);
     let response = get(formatstring).expect("string not found");
     let document = Html::parse_document(&response.text().expect("message not present"));
