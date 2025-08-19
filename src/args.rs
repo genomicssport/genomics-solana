@@ -36,4 +36,8 @@ pub enum Commands {
         // provide the path to the file
         pathfile: String,
     },
+    RsIDSolana {
+        // provide the rsid for the variant for which you want to generate a byte code
+        rsid: String,
+    },
 }

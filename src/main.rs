@@ -1,11 +1,13 @@
 mod annotate;
 mod args;
+mod createsolana;
 mod generatannot;
 mod map;
 mod readstruct;
 use crate::annotate::annotateall;
 use crate::args::CommandParse;
 use crate::args::Commands;
+use crate::createsolana::getrsidsolana;
 use crate::generatannot::getrsid;
 use crate::map::mapid;
 use async_std::task;
@@ -33,6 +35,10 @@ fn main() {
         Commands::AnnotateAll { annotate, pathfile } => {
             let command = task::block_on(annotateall(annotate, pathfile)).unwrap();
             println!("The command has finished:{}", command);
+        }
+        Commands::RsIDSolana { rsid } => {
+            let command = task::block_on(getrsidsolana(rsid)).unwrap();
+            println!("The borsh index for the token has been written:{}", command);
         }
     }
 }

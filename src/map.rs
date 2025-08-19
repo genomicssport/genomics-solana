@@ -1,4 +1,5 @@
 use crate::readstruct::ReadSNP;
+use borsh::{BorshDeserialize, BorshSerialize};
 use reqwest::blocking::get;
 use scraper::{Html, Selector};
 use std::error::Error;

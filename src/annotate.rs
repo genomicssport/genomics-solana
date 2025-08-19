@@ -6,7 +6,6 @@ use std::error::Error;
 use std::fs::File;
 use std::io::{BufRead, BufReader};
 use std::thread;
-
 /*
  Author Gaurav Sablok
  Instytut Chemii Bioorganicznej
@@ -38,18 +37,13 @@ pub async fn annotateall(optionannot: &str, pathstring: &str) -> Result<String, 
             }
         }
 
-        // tuple the approach.
-
         let mut snpvec: Vec<(String, String)> = Vec::new();
         for i in opensnpstruct.iter() {
             let linestruct = format!("{}/{}", "https://www.ncbi.nlm.nih.gov/snp/", i.rsid);
             snpvec.push((i.rsid.clone(), linestruct));
         }
 
-        // multi thread plus async in the main block.
-
         let mut asyncvec: Vec<ReadAnnotate> = Vec::new();
-
         thread::spawn(move || {
             for i in snpvec.iter() {
                 for j in opensnpstruct.iter() {
@@ -67,7 +61,9 @@ pub async fn annotateall(optionannot: &str, pathstring: &str) -> Result<String, 
                                 .replace("\n", "")
                                 .replace("Genomecontext", "")
                                 .replace("Selectflanklength", "")
-                                .replace(":", "");
+                                .replace(":", "")
+                                .replace("GenomicPlacements", "")
+                                .replace("\"\"", "");
                             asyncvec.push(ReadAnnotate {
                                 rsid: j.rsid.clone(),
                                 chromosome: j.chromosome.clone(),

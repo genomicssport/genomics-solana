@@ -41,6 +41,8 @@ Options:
 "GenomicPlacements"
 "Gene-OR4F5-,olfactoryreceptorfamily4subfamilyFmember5(plusstrand)"
 "8SubSNP,3Frequencysubmissions"
+
+./target/debug/genomics-solana rs-id-solana rs548049170
 ```
 
 - Acknowledgements: MOSAIC platform, developed as part of the ECBiG-MOSAIC project (POIR.04.02.00-00-D017/20), co-financed by the European Regional Development Fund (ERDF) under the Smart Growth Operational Programme 2014-2020, Measure 4.2 for the development of modern research infrastructure in the science sector.
