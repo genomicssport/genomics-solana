@@ -2,6 +2,8 @@
 
 ![](https://github.com/genomicssport/eVaiutilities/blob/main/logo.png)
 
+![](https://github.com/genomicssport/genomics-solana/blob/main/image.jpg)
+
 - Implementing the RUST blockchain based Health care management for the variant annotation and search.
 - Annotate and claim your sequenced variants using the Blockchain Healthcare.
 - Annotate with in a flick of a second 23&me personal genomics and generate SOL tokens for personal genomics.
