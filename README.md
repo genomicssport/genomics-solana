@@ -1,4 +1,4 @@
-# genomics-solana
+# genomicsSOL
 
 ![](https://github.com/genomicssport/eVaiutilities/blob/main/logo.png)
 
