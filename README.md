@@ -1,7 +1,5 @@
 # genomicsSOL
 
-![](https://github.com/genomicssport/eVaiutilities/blob/main/logo.png)
-
 ![](https://github.com/genomicssport/genomics-solana/blob/main/image.jpg)
 
 - Implementing the RUST blockchain based Health care management for the variant annotation and search.
@@ -15,8 +13,6 @@ SolGenome.
       Gaurav Sablok, IBCH, PAN, Poznan, Poland,
       https://portal.ichb.pl/laboratory-of-genomics/.
       Email: gsablok@ibch.poznan.pl
-      Prof. Luiza Handschuh
-      Email: luizahan@ibch.poznan.pl.
       ************************************************
 
 Usage: genomics-solana <COMMAND>
@@ -45,10 +41,6 @@ Options:
 
 ./target/debug/genomics-solana rs-id-solana rs548049170
 ```
-
-- Acknowledgements: MOSAIC platform, developed as part of the ECBiG-MOSAIC project (POIR.04.02.00-00-D017/20), co-financed by the European Regional Development Fund (ERDF) under the Smart Growth Operational Programme 2014-2020, Measure 4.2 for the development of modern research infrastructure in the science sector.
-- Project PI and Informal queries: Prof. Luiza Handschuh: luizahan@ibch.poznan.pl.
-- Code related queries: Dr. Gaurav Sablok: gsablok@ibch.poznan.pl.
 
  Gaurav Sablok \
  Instytut Chemii Bioorganicznej \
